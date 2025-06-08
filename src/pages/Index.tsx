@@ -16,7 +16,7 @@ const Index = () => {
     {
       id: 1,
       src: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&h=600&fit=crop",
-      title: "Classic Portrait I",
+      title: "Classic Portrait",
       category: "Portrait"
     },
 
@@ -25,7 +25,7 @@ const Index = () => {
     {
       id: 4,
       src: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&h=600&fit=crop",
-      title: "Studio Art I",
+      title: "Studio Art",
       category: "Portrait"
     },
   
@@ -34,7 +34,7 @@ const Index = () => {
     {
       id: 7,
       src: "https://images.unsplash.com/photo-1463453091185-61582044d556?w=800&h=600&fit=crop",
-      title: "Natural Beauty I",
+      title: "Natural Beauty ",
       category: "Portrait"
     },
     
@@ -43,7 +43,7 @@ const Index = () => {
     {
       id: 10,
       src: "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&h=600&fit=crop",
-      title: "Wedding Ceremony I",
+      title: "Wedding Ceremony ",
       category: "Wedding"
     },
     
@@ -52,7 +52,7 @@ const Index = () => {
     {
       id: 13,
       src: "https://images.unsplash.com/photo-1606800052052-a08af7148866?w=800&h=600&fit=crop",
-      title: "Bridal Portrait I",
+      title: "Bridal Portrait ",
       category: "Wedding"
     },
     
@@ -60,8 +60,8 @@ const Index = () => {
     // Wedding Photography - Reception & Details
     {
       id: 16,
-      src: "https://images.unsplash.com/photo-1529634597-2632b3a4b1b4?w=800&h=600&fit=crop",
-      title: "Reception Details I",
+      src: "/images/reception.png",
+      title: "Reception Details ",
       category: "Wedding"
     },
     
@@ -70,7 +70,7 @@ const Index = () => {
     {
       id: 19,
       src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
-      title: "Mountain Vista I",
+      title: "Mountain Vista ",
       category: "Landscape"
     },
     
@@ -79,7 +79,7 @@ const Index = () => {
     {
       id: 22,
       src: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&h=600&fit=crop",
-      title: "Forest Valley I",
+      title: "Forest Valley ",
       category: "Landscape"
     },
     
@@ -88,7 +88,7 @@ const Index = () => {
     {
       id: 25,
       src: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800&h=600&fit=crop",
-      title: "Ocean Sunset I",
+      title: "Ocean Sunset ",
       category: "Landscape"
     },
     
@@ -97,7 +97,7 @@ const Index = () => {
     {
       id: 28,
       src: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&h=600&fit=crop",
-      title: "Corporate Event I",
+      title: "Corporate Event ",
       category: "Event"
     },
     
@@ -106,7 +106,7 @@ const Index = () => {
     {
       id: 31,
       src: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=600&fit=crop",
-      title: "Birthday Celebration I",
+      title: "Birthday Celebration ",
       category: "Event"
     },
     
@@ -115,7 +115,7 @@ const Index = () => {
     {
       id: 34,
       src: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&h=600&fit=crop",
-      title: "Concert Performance I",
+      title: "Concert Performance ",
       category: "Event"
     },
     
@@ -124,13 +124,13 @@ const Index = () => {
     {
       id: 37,
       src: "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=800&h=600&fit=crop",
-      title: "City Lights I",
+      title: "City Lights ",
       category: "Street"
     },
     {
       id: 38,
       src: "https://images.unsplash.com/photo-1519302959554-a75be0afc82a?w=800&h=600&fit=crop",
-      title: "City Lights II",
+      title: "City Lights ",
       category: "Street"
     },
 
@@ -148,7 +148,7 @@ const Index = () => {
     {
       id: 43,
       src: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop",
-      title: "Architecture I",
+      title: "Architecture ",
       category: "Street"
     },
   
