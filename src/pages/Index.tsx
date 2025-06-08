@@ -18,6 +18,7 @@ const Index = () => {
       src: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&h=600&fit=crop",
       title: "Classic Portrait",
       category: "Portrait"
+      
     },
 
     
@@ -398,76 +399,81 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-6">
-        <div className="container mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-5xl font-bold text-white mb-6">Get In Touch</h2>
-            <p className="text-xl text-white/70 max-w-2xl mx-auto">
-              Ready to capture your special moments? Let's create something beautiful together.
-            </p>
-          </motion.div>
+{/* Contact Section */}
+<section id="contact" className="py-20 px-6">
+  <div className="container mx-auto">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      className="text-center mb-16"
+    >
+      <h2 className="text-5xl font-bold text-white mb-6">Get In Touch</h2>
+      <p className="text-xl text-white/70 max-w-2xl mx-auto">
+        Ready to capture your special moments? Let's create something beautiful together.
+      </p>
+    </motion.div>
 
-          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-center"
-            >
-              <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300">
-                <div className="w-16 h-16 mx-auto mb-4 bg-purple-500/20 backdrop-blur-xl rounded-full flex items-center justify-center">
-                  <Mail className="w-8 h-8 text-purple-300" />
-                </div>
-                <h3 className="text-xl font-semibold text-white mb-2">Email</h3>
-                <p className="text-white/70">hello@urpixelstudio.com</p>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-center"
-            >
-              <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300">
-                <div className="w-16 h-16 mx-auto mb-4 bg-blue-500/20 backdrop-blur-xl rounded-full flex items-center justify-center">
-                  <Phone className="w-8 h-8 text-blue-300" />
-                </div>
-                <h3 className="text-xl font-semibold text-white mb-2">Phone</h3>
-                <p className="text-white/70">+1 (555) 123-4567</p>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className="text-center"
-            >
-              <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300">
-                <div className="w-16 h-16 mx-auto mb-4 bg-pink-500/20 backdrop-blur-xl rounded-full flex items-center justify-center">
-                  <Instagram className="w-8 h-8 text-pink-300" />
-                </div>
-                <h3 className="text-xl font-semibold text-white mb-2">Instagram</h3>
-                <p className="text-white/70">@urpixelstudio</p>
-                
-              </div>
-              
-              
-              
-            </motion.div>
-            
-
-            
-            
+    <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      {/* Email */}
+      <motion.a
+        href="mailto:hello@urpixelstudio.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        className="text-center block"
+      >
+        <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300">
+          <div className="w-16 h-16 mx-auto mb-4 bg-purple-500/20 backdrop-blur-xl rounded-full flex items-center justify-center">
+            <Mail className="w-8 h-8 text-purple-300" />
           </div>
+          <h3 className="text-xl font-semibold text-white mb-2">Email</h3>
+          <p className="text-white/70">hello@urpixelstudio.com</p>
         </div>
-      </section>
+      </motion.a>
+
+      {/* Phone */}
+      <motion.a
+        href="tel:+14107360765"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="text-center block"
+      >
+        <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300">
+          <div className="w-16 h-16 mx-auto mb-4 bg-blue-500/20 backdrop-blur-xl rounded-full flex items-center justify-center">
+            <Phone className="w-8 h-8 text-blue-300" />
+          </div>
+          <h3 className="text-xl font-semibold text-white mb-2">Phone</h3>
+          <p className="text-white/70">+1 (410) 736-0765</p>
+        </div>
+      </motion.a>
+
+      {/* Instagram */}
+      <motion.a
+        href="https://www.instagram.com/urpixelstudio?igsh=c2EweXBndzkxand1"
+        target="_blank"
+        rel="noopener noreferrer"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        className="text-center block"
+      >
+        <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300">
+          <div className="w-16 h-16 mx-auto mb-4 bg-pink-500/20 backdrop-blur-xl rounded-full flex items-center justify-center">
+            <Instagram className="w-8 h-8 text-pink-300" />
+          </div>
+          <h3 className="text-xl font-semibold text-white mb-2">Instagram</h3>
+          <p className="text-white/70">@urpixelstudio</p>
+        </div>
+      </motion.a>
+    </div>
+  </div>
+</section>
+
       <section id="contact" className="py-20 px-6">
         <div className="container mx-auto">
           <motion.div
