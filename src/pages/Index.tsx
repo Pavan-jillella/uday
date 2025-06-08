@@ -2,6 +2,9 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Camera, Instagram, Mail, Phone, ArrowRight, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import ContactForm from "@/components/ContactForm";
+
+
 
 const Index = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -201,6 +204,7 @@ const Index = () => {
           </div>
         </div>
       </motion.nav>
+      
 
       {/* Hero Section */}
       <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
@@ -451,11 +455,33 @@ const Index = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-2">Instagram</h3>
                 <p className="text-white/70">@urpixelstudio</p>
+                
               </div>
+              
+              
+              
             </motion.div>
+            
+
+            
+            
           </div>
         </div>
       </section>
+      <section id="contact" className="py-20 px-6">
+        <div className="container mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-16"
+          >
+          </motion.div>
+
+          <ContactForm />
+        </div>
+      </section>
+      
 
       {/* Footer */}
       <footer className="py-12 px-6 border-t border-white/10">
@@ -522,6 +548,7 @@ const Index = () => {
                     {portfolioImages[selectedImage].category}
                   </p>
                 </div>
+                
               </div>
             </motion.div>
           </motion.div>
@@ -530,5 +557,10 @@ const Index = () => {
     </div>
   );
 };
+
+
+
+
+
 
 export default Index;
